@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background: #f7f7f7;
+}
+
+/* bootstrapの謎の右の余白を消す */
+#wrap {
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  max-width: 30%;
+}
+
+main {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 767px) {
+  main {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  header img {
+    max-width: 60%;
+  }
+}
+
+/* https://kahoo.blog/syntaxlighlight-like-qiita-on-sourcecode-box/ */
+pre {
+  padding: 0;
+  white-space: pre;
+  -moz-tab-size: 2; /* Firefox用 */
+  tab-size: 2;
+}
+code {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+  border-radius: 0;
+}
+/* .hljs {
+  padding: 1em 32px;
+} */
+
+pre {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media only screen and (min-width: 481px) {
+  pre {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  pre {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+}
+@media only screen and (min-width: 1030px) {
+  pre {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.xCodeBlock_title {
+  display: inline-block;
+  font-size: smaller;
+  border-radius: 0.5em 0.5em 0 0;
+  padding: 0 0.5em;
+  background: gray;
+  color: white;
+}
+
+.xCodeBlock_code {
+  margin-top: -30px;
+}
+
+.xCodeBlock_code pre {
+  padding: 0.5em;
+  overflow-x: auto;
+
+  color: #f8f8f2;
+  background-color: #272822;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
